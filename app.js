@@ -5,7 +5,7 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res, next) => {
-    res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+    res.json("Try the /quiz path");
 });
 
 
@@ -14,8 +14,13 @@ var quiz ={
         {
             message:"How old is the earth?",
             answers:["1 year", "2 year", "4.54 billion years", "4 year"],
-            correctAnswer:"4.54 billion years"
-        }
+            correctAnswerIndex:3
+        },
+        {
+            message:"What is Vik's favorite holiday?",
+            answers:["Valentines Day", "April Fools", "St Patties Day", "Holidays are a waste of time and money"],
+            correctAnswerIndex:4
+        },
     ],
 
 };
